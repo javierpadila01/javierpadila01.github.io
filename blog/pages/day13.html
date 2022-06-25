@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="../blogContent.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7f1b5525c2.js" crossorigin="anonymous"></script>
+  <title>6/7/2022 Blog</title>
+</head>
+
+<body>
+  <div class="container" ;>
+    <nav class="navbar navbar-default navbar-expand-md  navbar-dark fixed-top" id="navbar-blog">
+      <div class="container-fluid">
+        <button class="navbar-toggle navbar-toggler ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+          <ul class="navbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html" id="active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Back To Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto: jad6442@tamu.edu" target="_blank">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="masthead" style="background-image: url('../../media/images/blog/6-7/pythonComs.JPG');">
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="post-heading">
+            <h1>Sleep Schedule</h1>
+            <span class="meta">Posted on June 7th, 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article class="mb-4">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <p>
+            Having a good sleeping schedule is something I only have when my bad sleeping schedule happens to sync with
+            the normal hours in a
+            day. The reason it is so bad is because I am a huge advocate of naps. These naps have been the death of my
+            productivity over this
+            journey. Today, my nap took up a larger part of my day that I wish I could have dedicated to some of the
+            projects I have been doing.
+          </p>
+
+          <p>
+            I am going to try to stop taking naps. Atleast naps that span any more than 30 minutes. This would not only
+            give me more time throughout the day
+            to work on things, but do more in the sense of making sure that I fall asleep earlier and align more with a
+            good sleeping schedule.
+          </p>
+
+          <p>
+            Even with the nap that took up a chunk of my afternoon, I had yet another good day. From finally getting
+            python to communicate with my arduino, to
+            finishing up my sketch of the camera slider and starting on the model. Tomorrow will be the first day I try
+            implementing this nap policy, so let's
+            see what can get accomplished.
+          </p>
+
+
+          <h2 class="section-heading">Camera Slider</h2>
+
+          <p>
+            In finalizing the camera slide sketch, I was able to narrow in on the parts that needed to be designed for
+            and the parts that I would simply use from
+            what I have laying around. Ultimately, the system comprises of 3 motors. Motor one is responsible for
+            'sliding' the camera. Motor two rotates the camera
+            about its mount. Lastly, motor three will control the tilt of the camera.
+          </p>
+
+          <a href="#!">
+            <img class="img-fluid" src="../../media/images/blog/6-7/camerasliderDrawing.jpg">
+          </a>
+          <span class="caption text-muted">
+            Camera Glider Sketch
+          </span>
+
+          <p>
+            The system does not seem too complex, I just need to settle on dimensions that will hold the camera and
+            motors across the system. With this sketch
+            complete, I went ahead and modeled the base board that uses dimensions of a piece of scrap wood I have
+            laying around and the stepper that I plan on
+            using. Thankfully, I was able to find a model of the camera that I imported into the system for dimension
+            and assembly purposes.
+          </p>
+
+          <p>
+            Tomorrow, I will complete the sketch and start modeling some of the known parts like the base board, stepper
+            motors, and rods I am going to use. There's no way
+            I am going to model the camera as it would take me far longer than I would like, so I hope to find a model
+            online somewhere that I could use.
+          </p>
+
+          <a href="#!">
+            <img class="img-fluid" src="../../media/images/blog/6-7/cameraSliderModel.JPG">
+          </a>
+          <span class="caption text-muted">
+            Camera Glider Model
+          </span>
+
+          <h2 class="section-heading">3D Printing</h2>
+          <p>
+            The phone holder finished printing. It took about 9 and a half hours that was accompanied by a high pitched
+            sound that kept me awake throughout the night.
+            Although it was pretty easy to print and required little post-processing, I did learn a few things. I should
+            have orietned the print better so that it
+            would not require as much supports to create. Doing so would have saved me the fear of breaking it as I was
+            removing the interior supports. It also would
+            have drastically decreased the printing time and costs.
+          </p>
+
+          <a href="#!">
+            <img class="img-fluid " src="../../media/images/blog/6-7/phoneHolder.JPG">
+          </a>
+          <span class="caption text-muted">
+            Phone Holder
+          </span>
+
+          <p>
+            With the phone holder complete, I went ahead and quickly modeled something that would go on to solve a minor
+            problem I have been dealing with. Whenever I
+            need my Ipad, I always forget where I previously left it or whenever I don't need it, it is taking up a
+            large amount of space on one of my desks. To resolve
+            this, I quickly created some c bracket mounts that I would go on to place under my desk to comfortably hold
+            my ipad and the cases I have for it. Lets hope
+            it doesn't fall in the middle of the night.
+          </p>
+
+          <a href="#!">
+            <img class="img-fluid " src="../../media/images/blog/6-7/ipadHolder.JPG">
+          </a>
+          <span class="caption text-muted">
+            Ipad Holder C Bracket
+          </span>
+
+          <h2 class="section-heading">Python Arduino Communication</h2>
+          <p>
+            I was finally able to get a python script able to communicate with an arduino. It was actually a lot easier
+            than I thought it would be.
+            It simply writes and reads information to the serial monitor on the Arduino. What I actually had more
+            trouble with was my limit switches
+            cooperating with me. Ultimately, it was a simple fix in altering a while loop in the arduino script, but it
+            was not simple in getting there.
+            Nevertheless, I am glad I was able to get python working on the arduino. I am excited to what posibilities
+            await this.
+          </p>
+
+          <a href="#!">
+            <img class="img-fluid" src="../../media/images/blog/6-7/pythonComs.JPG">
+          </a>
+          <span class="caption text-muted">
+            The Python and Arduino Duo
+          </span>
+
+          <h2 class="section-heading">Habit Tracking</h2>
+          <p>
+            Today, I journaled, worked out, read, tracked my caloric intake, and worked on at least one of my personal
+            projects. Today was a good day.
+          </p>
+
+          <h2 class="section-heading">What I am thankful for</h2>
+          <p>
+            I am thankful for my parents. They have done nothing but support and love me throughout all of my ventures.
+          </p>
+          <span class="caption text-muted">
+            Strive for progress, not perfection. Do More. - J.D.
+          </span>
+
+          <nav aria-label="..." class="">
+            <ul class="pagination justify-content-center">
+              <li class="page-item ">
+                <a class="page-link" href="day12.html" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item "><a class="page-link" href="day12.html">12</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="day13.html">13<span class="sr-only">(current)</span></a>
+              </li>
+              <li class=" page-item"><a class="page-link" href="day14.html">14</a></li>
+              <li class=" page-item">
+                <a class="page-link" href="day14.html">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </article>
+  <!-- <div class="jumbotron jumbotron-fluid overlayOne">
+      <div class="container">
+        <h1 class="display-4 whiteText" >Day One of Many</h1>
+        <p class="lead whiteText">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+
+        </div>
+      </div>
+
+    </div> -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+<footer class="blog-footer" style="padding: 1rem; background-color: #dadada;">
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-sm-12 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <div class="text-uppercase text-center font-weight-bold" style="color: rgb(0, 0, 0);">
+          <a class="hoverblue" href="https://www.linkedin.com/in/joshua-duarte/" target="_blank"><i
+              class="fa fa-linkedin-square fa-3x" style=""></i></a>
+          <a class="hoverblue" href="https://github.com/joshuaaduarte" target="_blank"><i class="fab fa-github fa-3x"
+              style="padding-left:2rem; padding-right: 2rem;"></i></a>
+          <a class="hoverblue" href="../../media/documents/Duarte-Joshua.pdf" target="_blank"><i
+              class=" far fa-file fa-3x" style="padding-right: 2rem;"></i></a>
+          <a class="hoverblue" href="mailto: jad6442@tamu.edu" target="_blank"><i class=" far fa-envelope fa-3x"
+              style="padding-right: 2rem; "></i></a>
+          <a class="hoverblue" href="https://www.buymeacoffee.com/joshuaduarte" target="_blank"><i
+              class=" fas fa-coffee fa-3x" style=" "></i></a>
+        </div>
+        <p class="text-center" style="color: white;">
+        </p>
+      </div>
+    </div>
+    <!-- Grid row -->
+
+  </div>
+</footer>
+
+</html>

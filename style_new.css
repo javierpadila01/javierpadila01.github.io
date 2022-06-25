@@ -1,0 +1,23 @@
+body {
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+
+#particles-js {
+    height:100%;
+    background: rgb(21, 72, 95);
+    justify-content:center;
+    align-items:center;
+}
+
+#coverphoto {
+    position:absolute;
+    opacity: .9;
+    height:100vh;
+}
+
+.name {
+    position:absolute;
+    top: 20vh;
+}

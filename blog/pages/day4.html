@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="../blogContent.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7f1b5525c2.js" crossorigin="anonymous"></script>
+  <title>5/29/2022 Blog</title>
+</head>
+
+<body>
+  <div class="container" ;>
+    <nav class="navbar navbar-default navbar-expand-md  navbar-dark fixed-top" id="navbar-blog">
+      <div class="container-fluid">
+        <button class="navbar-toggle navbar-toggler ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+          <ul class="navbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html" id="active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Back To Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto: jad6442@tamu.edu" target="_blank">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="masthead" style="background-image: url('../../media/images/blog/5-29masthead.JPG');">
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="post-heading">
+            <h1>What a Bug...</h1>
+            <span class="meta">Posted on May 29th, 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article class="mb-4">
+
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <p>
+            It was a really nice Sunday. I gave my self some time to do a reset for the week ahead. This will be the
+            first week in which I will be blogging daily and working to make the most of each day. Aside from the
+            reset, I continued working on the code responsible for making the motors within Gambit function. After
+            banging my head against the desk for a few hours I ultimately got it to work. For now.
+          </p>
+
+          <p>
+            I also got to thinking about the many projects I want to complete over the next 60 days. I'll probably share
+            them with
+            you all in the coming days, so be ready. I already know the list will grow as time passes, but that's a
+            problem for another day. Nevertheless, I am
+            scared I will not be able to accomplish as much as I want to over this endeavor after dealing with
+            the Gambit problem over the last day and a half. I am sure it's a learning curve thing, but only time
+            will tell. I just have to keep at it, and don't beat myself up too much over the problems I am sure
+            to face as embark on this journey of learning.
+          </p>
+
+          <p>
+            Another good day in the books. Excited for what tomorrow has in store.
+          </p>
+
+          <h2 class="section-heading">Gambit</h2>
+          <p>
+            A '\n' and an equal sign. A '\n' and an equal sign. A '\n' and an equal sign is what has caused me to spend
+            many many hours of my day
+            looking at code that would not work.
+          </p>
+
+          <p>
+            So looking at what I was trying to accomplish again. I set out to create a script that allowed me to enter
+            a direction (up, down, left, right), and a number coorelating to the amount of rotations the motor should
+            turn.
+            With this input, the script would then turn the input into respective moves made by the motor. Depending on
+            the
+            direction, motor one, two, or both would turn clockwise or counter-clockwise.
+          </p>
+
+          <p>
+            My script seemed to be working fine as I would typically ask it to turn left and provide 20 rotations.
+            However, on the
+            second time, no matter what direction I asked it to go, if I asked it to turn 20 rotations, the motors would
+            not react.
+            Also, it would always make the motors turn counter clockwise. Something that should only happen when I type
+            'left'.
+            In regards to the first problem, I came to find out that the motors stored the position throughout the
+            script and was absolute and not relative. What I
+            mean by this is that like my good friend Jonathan put it, if you ask a football player to go to the 20 yard
+            line, and then
+            ask it again, it will not move. However, if it was relative, you would just ask the football to move 20
+            yards each turn and ultimately, the
+            football player would reach the destination you actually want them to.
+          </p>
+
+          <p>
+            I was able to resolve this reltatively easily by just setting the position of the motor to 0 after
+            each iteration. The \n problem was a different story. As mentioned, prior to inputting the revolutions, I
+            needed to input
+            a direction. As I also mentioned, I would always start by entering left into the serial monitor. Always.
+            What I came to find out was that the reason the motors would always turn counter clockwise was because it
+            was
+            the first if statement I had within the script. Within this if statement, I used a singular equal sign
+            instead of two. This
+            single equal sign would always have its condition met as long as I entered something to the serial monitor
+            making the motors
+            turn counter-clockwise. Always making them turn counter-clockwise. I then added the second equal sign which
+            still did not
+            resolve my issue. Now no condition was being met across the four directions I had in place. It wasn't until
+            I entered a '\n'
+            at the end the directions within the condition of the if statements that it worked flawlessly. A '\n'
+            typically notes the creation
+            of a new line, or hitting enter on the keyboard. Which is something I had to do each time I input something
+            within the serial monitor.
+            This '\n' and equal sign caused me much pain over the hours that I looked over the code. But boy when I say
+            there was no greater feeling to
+            seeing the motors turn as I had intended, I mean it.
+          </p>
+
+          <h2 class="section-heading">SHPE</h2>
+          <p>
+            With the help of the co-chair for RLDC, Brenda, the metrics pertaining to the conference were provided and
+            input within the document that I need
+            to provide our recommenders with. I have it scheduled to be sent out tomorrow morning, and I truly hope they
+            find the metrics impressive, because what
+            that team was able to accomplish was a conference worth remembering.
+          </p>
+
+          <h2 class="section-heading">Eats</h2>
+          <p>
+            Have you ever tried air fried 'boiled' eggs? Well you should. Heat some up at 270 degrees farenheit for
+            about 15 minutes and
+            you will have yourself a nice treat. Definetely going to be using this more often than you know. Might have
+            to watch my cholesterol though...
+          </p>
+
+          <a href="#!">
+            <img class="img-fluid" src="../../media/images/blog/5-29eats.JPG">
+
+          </a>
+          <span class="caption text-muted">
+            An egg worth having
+          </span>
+
+          <h2 class="section-heading">Habit Tracking</h2>
+          <p>
+            Today, I journaled, stretched (quite intensely), read, tracked my caloric intake, and worked on at least one
+            of my personal projects. Today was a good day.
+          </p>
+
+          <h2 class="section-heading">What I am thankful for</h2>
+          <p>
+            I am thankful for that special someone who I am honored to have spent the last nine months with. Thank you
+            for putting up with me.
+          </p>
+          <span class="caption text-muted">
+            All it takes is passion and hard work. Do More. - J.D.
+          </span>
+
+          <nav aria-label="..." class="">
+            <ul class="pagination justify-content-center">
+              <li class="page-item ">
+                <a class="page-link" href="day3.html" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item "><a class="page-link" href="day3.html">3</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="day4.html">4<span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="page-item "><a class="page-link" href="day5.html">5</a></li>
+              <li class="page-item ">
+
+                <a class="page-link" href="day5.html">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </article>
+  <!-- <div class="jumbotron jumbotron-fluid overlayOne">
+      <div class="container">
+        <h1 class="display-4 whiteText" >Day One of Many</h1>
+        <p class="lead whiteText">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+
+        </div>
+      </div>
+
+    </div> -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+<footer class="blog-footer" style="padding: 1rem; background-color: #dadada;">
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-sm-12 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <div class="text-uppercase text-center font-weight-bold" style="color: rgb(0, 0, 0);">
+          <a class="hoverblue" href="https://www.linkedin.com/in/joshua-duarte/" target="_blank"><i
+              class="fa fa-linkedin-square fa-3x" style=""></i></a>
+          <a class="hoverblue" href="https://github.com/joshuaaduarte" target="_blank"><i class="fab fa-github fa-3x"
+              style="padding-left:2rem; padding-right: 2rem;"></i></a>
+          <a class="hoverblue" href="../../media/documents/Duarte-Joshua.pdf" target="_blank"><i
+              class=" far fa-file fa-3x" style="padding-right: 2rem;"></i></a>
+          <a class="hoverblue" href="mailto: jad6442@tamu.edu" target="_blank"><i class=" far fa-envelope fa-3x"
+              style="padding-right: 2rem; "></i></a>
+          <a class="hoverblue" href="https://www.buymeacoffee.com/joshuaduarte" target="_blank"><i
+              class=" fas fa-coffee fa-3x" style=" "></i></a>
+        </div>
+        <p class="text-center" style="color: white;">
+        </p>
+      </div>
+    </div>
+    <!-- Grid row -->
+
+  </div>
+</footer>
+
+</html>
